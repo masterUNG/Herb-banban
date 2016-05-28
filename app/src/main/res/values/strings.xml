@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Herb banban</string>
+
+    <string name="title_main">สมุนไพร บ้านๆ</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="signin">Login</string>
+    <string name="signup">สมัครสมาชิค</string>
+    <string name="guest">Guest</string>
+
+    <string name="name">ชื่อ</string>
+    <string name="currency">สกุล</string>
+    <string name="phone">เบอร์โทรศัพท์</string>
+    <string name="address">ที่อยู่</string>
+    <string name="title_activity_detail">Map</string>
+
+
+</resources>
