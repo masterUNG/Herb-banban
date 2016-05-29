@@ -44,7 +44,10 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" />
         <activity android:name=".UpdateHerb" />
-        <activity android:name=".ApproveHerb"></activity>
+        <activity android:name=".ApproveHerb" />
+        <activity
+            android:name=".UpdateMapsActivity"
+            android:label="@string/title_activity_update_maps"></activity>
     </application>
 
 </manifest>
