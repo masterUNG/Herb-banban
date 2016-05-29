@@ -27,7 +27,7 @@ public class ReadAllHerbActivity extends AppCompatActivity {
     }
 
     public void clickUpdate(View view) {
-        startActivity(new Intent(this, UpdateHerb.class));
+        startActivity(new Intent(this, UpdateMapsActivity.class));
     }
 
     public void clickApprove(View view) {
