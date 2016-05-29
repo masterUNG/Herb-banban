@@ -2,6 +2,7 @@ package ubru.sabaipon.teerawat.apichat.herbbanban;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,6 +24,12 @@ public class UpdateMapsActivity extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }   // onCreate
+
+    public void clickUpdateHerbToServer(View view) {
+
+
+
+    }   // update
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
