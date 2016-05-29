@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ubru.sabaipon.teerawat.apichat.herbbanban.UpdateHerb"
     android:background="@drawable/bbb2">
 
@@ -23,13 +19,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scrollView3"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/textView20">
+        android:layout_below="@+id/textView20"
+        android:layout_above="@+id/button5"
+        android:background="#96ffffff">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="15dp">
 
             <fragment xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -37,7 +35,7 @@
                 android:id="@+id/map"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="250dp"
                 tools:context="ubru.sabaipon.teerawat.apichat.herbbanban.UpdateMapsActivity" />
 
             <LinearLayout
@@ -71,77 +69,40 @@
 
                 </LinearLayout>
 
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:id="@+id/scrollView5" >
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:text="@string/up_hub1"
-                            android:id="@+id/textView22"
-                            android:textSize="18dp"
-                            android:layout_weight="1"
-                            android:textColor="#060006" />
-
-                        <EditText
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/editText10"
-                            android:hint="@string/up_hub11"
-                            android:inputType="text"
-                            android:textSize="@dimen/h2"
-                            android:layout_weight="2" />
-                    </LinearLayout>
-                </ScrollView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/up_hub2"
-                    android:id="@+id/textView23"
-                    android:textSize="@dimen/h2"
-                    android:layout_weight="1"
-                    android:textColor="#060006" />
-
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText11"
-                    android:hint="@string/up_hub22"
-                    android:inputType="text"
-                    android:layout_weight="2"
-                    android:textSize="@dimen/h2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent" >
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/up_hub3"
-                        android:id="@+id/textView24"
+                        android:text="@string/up_hub1"
+                        android:id="@+id/textView22"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#060006" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText10"
+                        android:hint="@string/up_hub11"
+                        android:inputType="text"
+                        android:textSize="@dimen/h2"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/up_hub2"
+                        android:id="@+id/textView23"
                         android:textSize="@dimen/h2"
                         android:layout_weight="1"
                         android:textColor="#060006" />
@@ -149,12 +110,11 @@
                     <EditText
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/editText12"
-                        android:hint="@string/up_hub33"
+                        android:id="@+id/editText11"
+                        android:hint="@string/up_hub22"
                         android:inputType="text"
-                        android:textSize="@dimen/h2"
-                        android:layout_weight="2" />
-
+                        android:layout_weight="2"
+                        android:textSize="@dimen/h2" />
                 </LinearLayout>
 
             </LinearLayout>
